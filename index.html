@@ -243,38 +243,88 @@ cross-session decoding model, calculate the decoding accuracy of each subject in
         </div>
 
         <div class="row">
-          <!-- 第一个数据集模块 -->
+          <!-- Dataset Description -->
+          <div class="col-lg-12 mb-5">
+            <div class="box" data-aos="fade-up">
+              <div class="card border-0" style="background-color: #f8f9fa;">
+                <div class="card-body">
+                  <p class="card-text" style="font-size: 16px; text-align: justify;">
+                    We provide a <strong>multi-modal AAD (MM-AAD)</strong> dataset consisting of EEG data collected from 40 subjects in two settings: audio-only and audio-visual scenes. Each subject was instructed to focus on one of two competing voices from the 90° left or right for an average of 55 minutes, resulting in a total of approximately 73.3 hours of data. Participants will build models to analyze the spatial orientation (left/right) of attention from EEG signals.
+                  </p>
+                  
+                  <!-- Table -->
+                  <div class="table-responsive mt-4">
+                    <table class="table table-bordered" style="font-size: 14px;">
+                      <thead style="background-color: #1f4385; color: white;">
+                        <tr>
+                          <th>Scene</th>
+                          <th>Stimuli Signal</th>
+                          <th>EEG</th>
+                          <th>Channels</th>
+                          <th>Duration</th>
+                          <th>Speaker Gender</th>
+                          <th>Direction</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Audio-visual</td>
+                          <td>Audio & Video</td>
+                          <td>✓</td>
+                          <td>32</td>
+                          <td>55 min</td>
+                          <td>Male & Female</td>
+                          <td>±90°</td>
+                        </tr>
+                        <tr>
+                          <td>Audio-only</td>
+                          <td>Audio</td>
+                          <td>✓</td>
+                          <td>32</td>
+                          <td>55 min</td>
+                          <td>Male & Female</td>
+                          <td>±90°</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Audio-visual Scene Dataset -->
           <div class="col-lg-6 col-md-6">
             <div class="box" data-aos="zoom-in" data-aos-delay="100" style="height:100%">
               <div class="card col border-0" style="color: rgb(255, 245, 245); background-color: #1f4385; height:100%;">
-                <i class='bx bx-laptop' style="font-size:70px"></i> <!-- 统一图标 -->
+                <i class='bx bx-laptop' style="font-size:70px"></i>
                 <div class="card-body text-center">
-                  <h5 class="card-title" style="font-size: 24px;">data_for_cross_subject(.zip):</h5>
+                  <h5 class="card-title" style="font-size: 24px;">Audio-visual Scene</h5>
                   <p class="card-text" style="font-size: 16px; text-align: justify;">
-                    The zipfile is only suitable for cross-subject task and contains complete raw and preprocessed data for 30 subjects in audio-visual scene. The data are not pre-divided into training and validation sets. Participants are required to perform their own cross-validation as needed. 
-                    
+                    Subjects watched videos while wearing EEG caps. They focused on specific speakers based on gender cues, with gaze fixed on the speaker. Includes 55 minutes of EEG data per subject across 40 subjects.
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- 第二个数据集模块 -->
+          <!-- Audio-only Scene Dataset -->
           <div class="col-lg-6 col-md-6">
             <div class="box" data-aos="zoom-in" style="height:100%">
               <div class="card col border-0" style="color: rgb(255, 245, 245); background-color: #1f4385;">
-                <i class='bx bx-laptop' style="font-size:70px"></i> <!-- 统一图标 -->
+                <i class='bx bx-laptop' style="font-size:70px"></i>
                 <div class="card-body text-center">
-                  <h5 class="card-title" style="font-size: 24px;">data_for_cross_session(.zip):</h5>
+                  <h5 class="card-title" style="font-size: 24px;">Audio-only Scene</h5>
                   <p class="card-text" style="font-size: 16px; text-align: justify;">
-                    This zipfile is designed for cross-session tasks and includes both raw and preprocessed data for 30 subjects in audio-only and audio-visual scenes. For each subject, the data from the audio-visual scene serves as the training set, while the data from the audio-only scene serves as the validation set. 
-        
+                    Subjects focused on audio stimuli while fixating on a crosshair. Attention direction was cued (left/right). Includes 55 minutes of EEG data per subject with attention validation via post-trial questions.
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
         <!-- Evaluation Metric 部分 -->
         <div class="row mt-5">
