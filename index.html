@@ -234,22 +234,23 @@ cross-session decoding model, calculate the decoding accuracy of each subject in
       }
     </style>
     
-<section id="data-description" class="section-bg">
+<section id="pricing" class="pricing section-bg">
   <div class="container">
     <!-- Title Section -->
     <div class="section-title" data-aos="fade-up">
-      <h2 style="font-size: 36px; font-weight: bold; color: #1f4385;">Data Description & Evaluation Metric</h2>
-      <p style="font-size: 18px; color: #444;">Explore the datasets and understand how your results will be evaluated</p>
+      <h2 style="font-size: 36px; font-weight: bold; color: #1f4385;">Data Description</h2>
+      <p style="font-size: 18px; color: #444;">Explore the datasets and evaluation metrics for the challenge</p>
     </div>
 
-    <!-- Dataset Description -->
+    <!-- Dataset Description Section - Removed card container -->
     <div class="row">
       <div class="col-lg-12 mb-5" data-aos="fade-up">
+        <!-- Text content without container -->
         <p style="font-size: 16px; text-align: justify; color: #333; margin-bottom: 20px;">
           We provide a <strong>multi-modal AAD (MM-AAD)</strong> dataset consisting of EEG data collected from 40 subjects in two settings: audio-only and audio-visual scenes. Each subject was instructed to focus on one of two competing voices from the 90° left or right for an average of 55 minutes, resulting in a total of approximately 73.3 hours of data. Participants will build models to analyze the spatial orientation (left/right) of attention from EEG signals.
         </p>
         
-        <!-- Table -->
+        <!-- Table - kept original styling -->
         <div class="table-responsive">
           <table class="table table-bordered" style="font-size: 14px;">
             <thead style="background-color: #1f4385; color: white;">
@@ -287,37 +288,44 @@ cross-session decoding model, calculate the decoding accuracy of each subject in
         </div>
       </div>
 
-      <!-- Scene Cards -->
+      <!-- Audio-visual Scene Card -->
       <div class="col-lg-6 col-md-6 mb-4">
-        <div class="card border-0 shadow-sm h-100" data-aos="zoom-in">
-          <div class="card-body">
-            <h5 class="card-title" style="font-size: 24px; color: #1f4385;">Audio-visual Scene</h5>
-            <p class="card-text" style="font-size: 16px; text-align: justify; color: #333;">
-              Subjects watched videos while wearing EEG caps. They focused on specific speakers based on gender cues, with gaze fixed on the speaker. Includes 55 minutes of EEG data per subject across 40 subjects.
-            </p>
+        <div class="box" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title" style="font-size: 24px; color: #1f4385;">Audio-visual Scene</h5>
+              <p class="card-text" style="font-size: 16px; text-align: justify; color: #333;">
+                Subjects watched videos while wearing EEG caps. They focused on specific speakers based on gender cues, with gaze fixed on the speaker. Includes 55 minutes of EEG data per subject across 40 subjects.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
+      <!-- Audio-only Scene Card -->
       <div class="col-lg-6 col-md-6 mb-4">
-        <div class="card border-0 shadow-sm h-100" data-aos="zoom-in">
-          <div class="card-body">
-            <h5 class="card-title" style="font-size: 24px; color: #1f4385;">Audio-only Scene</h5>
-            <p class="card-text" style="font-size: 16px; text-align: justify; color: #333;">
-              Subjects focused on audio stimuli while fixating on a crosshair. Attention direction was cued (left/right). Includes 55 minutes of EEG data per subject with attention validation via post-trial questions.
-            </p>
+        <div class="box" data-aos="zoom-in">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title" style="font-size: 24px; color: #1f4385;">Audio-only Scene</h5>
+              <p class="card-text" style="font-size: 16px; text-align: justify; color: #333;">
+                Subjects focused on audio stimuli while fixating on a crosshair. Attention direction was cued (left/right). Includes 55 minutes of EEG data per subject with attention validation via post-trial questions.
+              </p>
+            </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Evaluation Metric -->
-      <div class="col-12 mt-5" data-aos="fade-up">
-        <h3 style="font-size: 28px; font-weight: bold; color: #1f4385;">Evaluation Metric</h3>
-        <p style="font-size: 18px; color: #444;">Understand how your results will be evaluated</p>
+    <!-- Evaluation Metric Section -->
+    <div class="row mt-5">
+      <div class="col-12">
+        <!-- Formula image -->
         <div class="text-center" data-aos="zoom-in">
-          <img src="assets/img/evaluation_formula.png" alt="Evaluation Formula" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);">
+          <img src="assets/img/evaluation_formula.png" alt="Evaluation Formula" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); margin-top: 20px;">
         </div>
-        <div class="mt-4 pl-4" style="padding-left: 2rem;">
+        <!-- Formula explanation -->
+        <div class="mt-4 pl-4" data-aos="fade-up" style="padding-left: 2rem;">
           <p style="font-size: 16px; text-align: justify;">
             <strong>CorrectTestSamples：</strong> The number of test samples in a subject that correctly identify the direction of auditory attention.
           </p>
