@@ -508,21 +508,32 @@ cross-session decoding model, calculate the decoding accuracy of each subject in
 <!-- ======= Timeline Section ======= -->
 <section id="timeline" class="clean-timeline">
   <div class="container">
-    <h1>TIMELINE OF EEG AAD CHALLENGE</h1>
+    <h1 class="timeline-title">TIMELINE OF EEG AAD CHALLENGE</h1>
     
     <p>The tentative timeline for running the challenge is as follows:</p>
     
     <ul class="timeline-items">
-      <li><strong>[September 10, 2025]</strong> Challenge begins. Release of training data, validation data, baseline paper, and code.</li>
-      <li><strong>[November 10, 2025]</strong> Release of testing data.</li>
-      <li><strong>[November 24, 2025]</strong> Result submission deadline.</li>
-      <li><strong>[December 1, 2025]</strong> Release of challenge results and rankings.</li>
-      <li><strong>[December 7, 2025]</strong> 2-page Papers Due (by invitation only).</li>
-      <li><strong>[January 11, 2026]</strong> 2-page Paper Acceptance Notification.</li>
-      <li><strong>[January 18, 2026]</strong> Camera-ready 2-page Papers Due.</li>
+      <li><span class="timeline-date">[September 10, 2028]</span> Challenge begins. Release of training data, validation data, baseline paper, and code.</li>
+      <li><span class="timeline-date">[November 10, 2028]</span> Release of testing data.</li>
+      <li><span class="timeline-date">[November 24, 2028]</span> Result submission deadline.</li>
+      <li><span class="timeline-date">[December 1, 2028]</span> Release of challenge results and rankings.</li>
+      <li><span class="timeline-date">[December 7, 2028]</span> 2-page Papers Due (by invitation only).</li>
+      <li><span class="timeline-date">[January 11, 2028]</span> 2-page Paper Acceptance Notification.</li>
+      <li><span class="timeline-date">[January 18, 2028]</span> Camera-ready 2-page Papers Due.</li>
     </ul>
     
-    <p class="timeline-note"><strong>Note:</strong> The specific deadline is set to 23:59 "Anytime on Earth"</p>
+    <p class="timeline-note">Note: The specific deadline is set to 23.59 "Anytime on Earth"</p>
+    
+    <div class="license-section">
+      <h2>LICENSE</h2>
+      <p>The MM-AAD dataset is only available for this EEG-AAD 2026 challenge and academic research. The following conditions require your compliance:</p>
+      <ol>
+        <li>References to the MM-AAD dataset need to be included in any work using the dataset.</li>
+        <li>For the baseline research paper, please cite the paper listed on our website.</li>
+        <li>You may not use the MM-AAD dataset or any derivative works for other purposes.</li>
+      </ol>
+      <p>All rights not expressly granted to you are reserved by the organizers of this challenge.</p>
+    </div>
   </div>
 </section>
 
@@ -536,15 +547,11 @@ cross-session decoding model, calculate the decoding accuracy of each subject in
   margin: 0 auto;
 }
 
-.clean-timeline h1 {
+.timeline-title {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #2c3e50;
-  text-align: center;
-}
-
-.clean-timeline p {
-  margin-bottom: 20px;
+  color: #0056b3; /* Blue color */
+  text-align: left;
 }
 
 .timeline-items {
@@ -554,25 +561,44 @@ cross-session decoding model, calculate the decoding accuracy of each subject in
 }
 
 .timeline-items li {
-  margin-bottom: 15px;
-  padding-left: 1em;
-  text-indent: -1em;
+  margin-bottom: 12px;
+  padding-left: 0;
+  text-indent: 0;
+  display: flex;
+  align-items: baseline;
 }
 
-.timeline-items li:before {
-  content: "• ";
-  color: #4e54c8;
+.timeline-date {
+  color: #0056b3;
   font-weight: bold;
-}
-
-.timeline-items strong {
-  color: #4e54c8;
+  min-width: 180px;
+  display: inline-block;
 }
 
 .timeline-note {
   font-style: italic;
   color: #666;
-  margin-top: 20px;
+  margin: 20px 0 40px 0;
+}
+
+.license-section {
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+  padding-top: 30px;
+}
+
+.license-section h2 {
+  color: #0056b3;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.license-section ol {
+  padding-left: 20px;
+}
+
+.license-section li {
+  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
@@ -580,8 +606,17 @@ cross-session decoding model, calculate the decoding accuracy of each subject in
     padding: 30px 15px;
   }
   
-  .clean-timeline h1 {
+  .timeline-title {
     font-size: 1.8rem;
+  }
+  
+  .timeline-items li {
+    flex-direction: column;
+  }
+  
+  .timeline-date {
+    margin-bottom: 5px;
+    min-width: auto;
   }
 }
 </style>
@@ -981,6 +1016,7 @@ cross-session decoding model, calculate the decoding accuracy of each subject in
 
 
 </html>
+
 
 
 
