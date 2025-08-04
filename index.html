@@ -56,12 +56,12 @@
   </section>
   <!-- End Hero -->
 
-  <!-- ======= Header ======= -->
+<!-- ======= Header ======= -->
 <header id="header" class="d-flex align-items-center">
   <div class="container d-flex align-items-center justify-content-between">
-    <div class="logo">
+    <div class="logo-container">
       <a href="index.html">
-        <img src="assets/img/icassp2.jpg" alt="" class="img-fluid logo-img" />
+        <img src="assets/img/icassp2.jpg" alt="" class="logo-img" />
       </a>
     </div>
 
@@ -72,8 +72,6 @@
         <li><a class="nav-link scrollto" href="#task">Tracks</a></li>
         <li><a class="nav-link scrollto" href="#registration">Registration</a></li>
         <li><a class="nav-link scrollto" href="#timeline">Timeline</a></li>
-        <!--<li><a class="nav-link scrollto" href="#organizers">Organizers</a></li>-->
-        <!--<li><a class="nav-link scrollto" href="./submission.html">Submission</a></li>-->
         <li>
           <a class="nav-link scrollto">
             <button class="btn-get-started btn rulesBtn" data-bs-toggle="modal" type="button"
@@ -83,30 +81,52 @@
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav>
-    <!-- .navbar -->
   </div>
 </header>
 <!-- End Header -->
 
 <style>
-  /* 添加响应式图片样式 */
-  .logo-img {
-    max-width: 100%;
-    height: auto;
-    transition: all 0.3s ease; /* 添加平滑过渡效果 */
+  /* 主容器样式 */
+  .logo-container {
+    max-width: 200px; /* 设置最大宽度 */
+    width: 100%; /* 宽度自适应 */
+    height: auto; /* 高度自适应 */
+    display: flex; /* 使用flex布局 */
+    align-items: center; /* 垂直居中 */
+    overflow: hidden; /* 防止内容溢出 */
   }
 
-  /* 针对小屏幕的调整 */
-  @media (max-width: 768px) {
-    .logo {
-      max-width: 150px; /* 根据需要调整 */
+  /* 图片样式 */
+  .logo-img {
+    width: 100%; /* 宽度填满容器 */
+    height: auto; /* 高度自适应保持比例 */
+    object-fit: contain; /* 保持比例并适应容器 */
+    transition: transform 0.3s ease; /* 添加平滑缩放效果 */
+  }
+
+  /* 针对不同屏幕尺寸的调整 */
+  @media (max-width: 992px) {
+    .logo-container {
+      max-width: 180px;
     }
   }
 
-  /* 针对超小屏幕的进一步调整 */
-  @media (max-width: 480px) {
-    .logo {
-      max-width: 120px; /* 根据需要调整 */
+  @media (max-width: 768px) {
+    .logo-container {
+      max-width: 150px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .logo-container {
+      max-width: 120px;
+    }
+  }
+
+  /* 防止在放大时溢出 */
+  @media (min-width: 1200px) {
+    .logo-container {
+      max-width: 220px;
     }
   }
 </style>
@@ -1043,5 +1063,6 @@ cross-session decoding model, calculate the decoding accuracy of each subject in
 
 
 </html>
+
 
 
