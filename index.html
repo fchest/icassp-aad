@@ -61,7 +61,7 @@
   <div class="container d-flex align-items-center justify-content-between">
     <div class="logo-container">
       <a href="index.html">
-        <img src="assets/img/icassp2.jpg" alt="" class="logo-img" />
+        <img src="assets/img/icassp2.jpg" alt="EEG-AAD 2026" class="logo-img" />
       </a>
     </div>
 
@@ -86,47 +86,31 @@
 <!-- End Header -->
 
 <style>
-  /* 主容器样式 */
+  /* 强制限制图片尺寸 */
   .logo-container {
-    max-width: 200px; /* 设置最大宽度 */
-    width: 100%; /* 宽度自适应 */
-    height: auto; /* 高度自适应 */
-    display: flex; /* 使用flex布局 */
-    align-items: center; /* 垂直居中 */
-    overflow: hidden; /* 防止内容溢出 */
+    max-width: 180px; /* 最大宽度 */
+    max-height: 60px; /* 最大高度 */
+    overflow: hidden; /* 防止溢出 */
   }
 
-  /* 图片样式 */
   .logo-img {
-    width: 100%; /* 宽度填满容器 */
-    height: auto; /* 高度自适应保持比例 */
-    object-fit: contain; /* 保持比例并适应容器 */
-    transition: transform 0.3s ease; /* 添加平滑缩放效果 */
+    width: 100%; /* 宽度自适应 */
+    height: auto; /* 高度按比例缩放 */
+    object-fit: contain; /* 保持比例 */
   }
 
-  /* 针对不同屏幕尺寸的调整 */
-  @media (max-width: 992px) {
-    .logo-container {
-      max-width: 180px;
-    }
-  }
-
+  /* 针对小屏幕调整 */
   @media (max-width: 768px) {
     .logo-container {
-      max-width: 150px;
+      max-width: 140px;
+      max-height: 50px;
     }
   }
 
-  @media (max-width: 576px) {
+  @media (max-width: 480px) {
     .logo-container {
       max-width: 120px;
-    }
-  }
-
-  /* 防止在放大时溢出 */
-  @media (min-width: 1200px) {
-    .logo-container {
-      max-width: 220px;
+      max-height: 40px;
     }
   }
 </style>
@@ -1063,6 +1047,7 @@ cross-session decoding model, calculate the decoding accuracy of each subject in
 
 
 </html>
+
 
 
 
