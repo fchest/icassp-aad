@@ -587,6 +587,52 @@ section {
 .registration p:last-child {
   margin-bottom: 0; /* 最后一个段落去掉底部间距 */
 }
+
+/*--------------------------------------------------------------
+# New Timeline Section (License Style)
+--------------------------------------------------------------*/
+.timeline-new {
+  padding: 60px 0;
+}
+
+.timeline-new .timeline-content-wrapper {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-new .intro-text {
+  color: #444444;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.timeline-new .timeline-list-new {
+  list-style: decimal; /* 使用数字列表 */
+  padding-left: 20px;
+  color: #444444;
+}
+
+.timeline-new .timeline-list-new li {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.timeline-new .timeline-list-new li strong {
+  color: #1f4385; /* 使用您网站的主题蓝色 */
+  margin-right: 5px;
+}
+
+.timeline-new .final-note {
+  margin-top: 25px;
+  color: #444444;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
