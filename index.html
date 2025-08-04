@@ -57,34 +57,59 @@
   <!-- End Hero -->
 
   <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
-      <div class="logo">
-        <a href="index.html"><img src="assets/img/icassp2.jpg" alt="" class="img-fluid" /></a>
-      </div>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#task">Tracks</a></li>
-          <li><a class="nav-link scrollto" href="#registration">Registration</a></li>
-          <li><a class="nav-link scrollto" href="#timeline">Timeline</a></li>
-          <!--<li><a class="nav-link scrollto" href="#organizers">Organizers</a></li>-->
-          <!--<li><a class="nav-link scrollto" href="./submission.html">Submission</a></li>-->
-          <li>
-            <a class="nav-link scrollto">
-              <button class="btn-get-started btn rulesBtn" data-bs-toggle="modal" type="button"
-                data-bs-target="#staticBackdrop">Rules & Rank</button>
-            </a>
-          </li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-      <!-- .navbar -->
+<header id="header" class="d-flex align-items-center">
+  <div class="container d-flex align-items-center justify-content-between">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/img/icassp2.jpg" alt="" class="img-fluid logo-img" />
+      </a>
     </div>
-  </header>
-  <!-- End Header -->
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+        <li><a class="nav-link scrollto" href="#about">About</a></li>
+        <li><a class="nav-link scrollto" href="#task">Tracks</a></li>
+        <li><a class="nav-link scrollto" href="#registration">Registration</a></li>
+        <li><a class="nav-link scrollto" href="#timeline">Timeline</a></li>
+        <!--<li><a class="nav-link scrollto" href="#organizers">Organizers</a></li>-->
+        <!--<li><a class="nav-link scrollto" href="./submission.html">Submission</a></li>-->
+        <li>
+          <a class="nav-link scrollto">
+            <button class="btn-get-started btn rulesBtn" data-bs-toggle="modal" type="button"
+              data-bs-target="#staticBackdrop">Rules & Rank</button>
+          </a>
+        </li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+    <!-- .navbar -->
+  </div>
+</header>
+<!-- End Header -->
+
+<style>
+  /* 添加响应式图片样式 */
+  .logo-img {
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s ease; /* 添加平滑过渡效果 */
+  }
+
+  /* 针对小屏幕的调整 */
+  @media (max-width: 768px) {
+    .logo {
+      max-width: 150px; /* 根据需要调整 */
+    }
+  }
+
+  /* 针对超小屏幕的进一步调整 */
+  @media (max-width: 480px) {
+    .logo {
+      max-width: 120px; /* 根据需要调整 */
+    }
+  }
+</style>
 
   <main id="main">
     <!-- ======= About Us Section ======= -->
@@ -376,9 +401,7 @@ cross-session decoding model, calculate the decoding accuracy of each subject in
                 
                 <li>
                     <strong>Link to registration form:</strong>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScV0uCxsnBEWe1boUMUzQZtXEpmSsiRw0DOlqMAfLIIqPJ71A/viewform?usp=dialog" target="_blank">
-                       https://docs.google.com/forms/d/e/1FAIpQLScV0uCxsnBEWe1boUMUzQZtXEpmSsiRw0DOlqMAfLIIqPJ71A/viewform?usp=dialog
-                    </a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScV0uCxsnBEWe1boUMUzQZtXEpmSsiRw0DOlqMAfLIIqPJ71A/viewform?usp=dialog" target="_blank">Registration Form</a>
                 </li>
               </div>
 
@@ -1020,4 +1043,5 @@ cross-session decoding model, calculate the decoding accuracy of each subject in
 
 
 </html>
+
 
