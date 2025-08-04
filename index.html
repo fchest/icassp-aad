@@ -506,88 +506,84 @@ cross-session decoding model, calculate the decoding accuracy of each subject in
     </style>
     
 <!-- ======= Timeline Section ======= -->
-<section class="timeline-section" id="timeline">
+<section id="timeline" class="clean-timeline">
   <div class="container">
-    <div class="section-title">
-      <h2>TIMELINE OF EEG AAD CHALLENGE</h2>
-    </div>
+    <h1>TIMELINE OF EEG AAD CHALLENGE</h1>
     
-    <div class="timeline-text">
-      <p>The tentative timeline for running the challenge is as follows:</p>
-      
-      <ul class="timeline-list">
-        <li><strong>[September 10, 2025]</strong> Challenge begins. Release of training data, validation data, baseline paper, and code.</li>
-        <li><strong>[November 10, 2025]</strong> Release of testing data.</li>
-        <li><strong>[November 24, 2025]</strong> Result submission deadline.</li>
-        <li><strong>[December 1, 2025]</strong> Release of challenge results and rankings.</li>
-        <li><strong>[December 7, 2025]</strong> 2-page Papers Due (by invitation only).</li>
-        <li><strong>[January 11, 2026]</strong> 2-page Paper Acceptance Notification.</li>
-        <li><strong>[January 18, 2026]</strong> Camera-ready 2-page Papers Due.</li>
-      </ul>
-      
-      <p class="note"><strong>Note:</strong> The specific deadline is set to 23:59 "Anytime on Earth"</p>
-    </div>
+    <p>The tentative timeline for running the challenge is as follows:</p>
+    
+    <ul class="timeline-items">
+      <li><strong>[September 10, 2025]</strong> Challenge begins. Release of training data, validation data, baseline paper, and code.</li>
+      <li><strong>[November 10, 2025]</strong> Release of testing data.</li>
+      <li><strong>[November 24, 2025]</strong> Result submission deadline.</li>
+      <li><strong>[December 1, 2025]</strong> Release of challenge results and rankings.</li>
+      <li><strong>[December 7, 2025]</strong> 2-page Papers Due (by invitation only).</li>
+      <li><strong>[January 11, 2026]</strong> 2-page Paper Acceptance Notification.</li>
+      <li><strong>[January 18, 2026]</strong> Camera-ready 2-page Papers Due.</li>
+    </ul>
+    
+    <p class="timeline-note"><strong>Note:</strong> The specific deadline is set to 23:59 "Anytime on Earth"</p>
   </div>
 </section>
 
 <style>
-  .timeline-section {
-    padding: 60px 0;
-    background: #f8f9fa;
+.clean-timeline {
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.clean-timeline h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.clean-timeline p {
+  margin-bottom: 20px;
+}
+
+.timeline-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 25px 0;
+}
+
+.timeline-items li {
+  margin-bottom: 15px;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.timeline-items li:before {
+  content: "• ";
+  color: #4e54c8;
+  font-weight: bold;
+}
+
+.timeline-items strong {
+  color: #4e54c8;
+}
+
+.timeline-note {
+  font-style: italic;
+  color: #666;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .clean-timeline {
+    padding: 30px 15px;
   }
   
-  .section-title h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    color: #2c3e50;
-    font-size: 2.2rem;
+  .clean-timeline h1 {
+    font-size: 1.8rem;
   }
-  
-  .timeline-text {
-    max-width: 800px;
-    margin: 0 auto;
-    background: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
-  }
-  
-  .timeline-list {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .timeline-list li {
-    padding: 15px 0;
-    border-bottom: 1px solid #eee;
-    line-height: 1.6;
-  }
-  
-  .timeline-list li:last-child {
-    border-bottom: none;
-  }
-  
-  .timeline-list strong {
-    color: #4e54c8;
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .note {
-    margin-top: 20px;
-    font-style: italic;
-    color: #666;
-  }
-  
-  @media (max-width: 768px) {
-    .timeline-text {
-      padding: 20px;
-    }
-    
-    .section-title h2 {
-      font-size: 1.8rem;
-    }
-  }
+}
 </style>
 
     <!-- ======= License Section ======= -->
@@ -985,6 +981,7 @@ cross-session decoding model, calculate the decoding accuracy of each subject in
 
 
 </html>
+
 
 
 
