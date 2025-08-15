@@ -122,36 +122,60 @@
     </section>
     <!-- End About Us Section -->
     
-    <section id="task" class="task">
-      <div class="container">
-        <div class="section-title" data-aos="fade-up">
-          <h2>Tasks Overview</h2>
-          <p>Details about the Tracks to be completed</p>
-        </div>
-        <div class="row">
-          <div class="col-lg-12" data-aos="fade-left">
-            <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 px-4">
-              <div class="track-card">
-                <div class="track-header">
-                  <h3>Task 1: Cross-subject</h3>
+<!-- ======= Tasks Section (with Images) ======= -->
+<section id="task" class="task">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Tasks Overview</h2>
+      <p>Details about the Tracks to be completed</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-12" data-aos="fade-left">
+        <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 px-4">
+
+          <!-- Task 1 Card -->
+          <div class="track-card">
+            <div class="track-header">
+              <h3>Task 1: Cross-subject</h3>
+            </div>
+            <div class="track-body-with-image">
+              <div class="row align-items-center">
+                <!-- Image for Task 1 -->
+                <div class="col-md-4 text-center">
+                  <img src="assets/img/model1.png" alt="Cross-subject Task Illustration" class="img-fluid track-image">
                 </div>
-                <div class="track-body">
+                <!-- Text for Task 1 -->
+                <div class="col-md-8">
                   <p>This task challenges participants to build AAD models capable of decoding auditory attention categories from EEG signals across unseen subjects in audio-visual environments. Participants are provided with data from 30 subjects for training and validation, and data from 10 additional subjects for testing. The goal is to build a generalizable cross-subject decoding model, calculate the decoding accuracy of each subject in the test set, and finally obtain the average decoding accuracy(%).</p>
                 </div>
               </div>
-              <div class="track-card">
-                <div class="track-header">
-                  <h3>Task 2: Cross-session</h3>
+            </div>
+          </div>
+
+          <!-- Task 2 Card -->
+          <div class="track-card">
+            <div class="track-header">
+              <h3>Task 2: Cross-session</h3>
+            </div>
+            <div class="track-body-with-image">
+              <div class="row align-items-center">
+                <!-- Image for Task 2 -->
+                <div class="col-md-4 text-center">
+                  <img src="assets/img/model2.png" alt="Cross-session Task Illustration" class="img-fluid track-image">
                 </div>
-                <div class="track-body">
+                <!-- Text for Task 2 -->
+                <div class="col-md-8">
                   <p>This task requires participants to build AAD models capable of decoding auditory attention categories from EEG signals of scenes that subjects have never seen before. During the training phase, EEG data from 30 subjects are provided for both the audio-only and audio-visual conditions, where the audio-only data are used for training and the corresponding audio-visual data are used for validation. Additionally, the audio-only data for the 10 test subjects are provided in advance during the training phase. In the testing phase, participants can simply apply the models trained on this data to predict the corresponding audio-visual data from the same subjects. The goal of the participants is to build a generalizable single-subject cross-session decoding model, calculate the decoding accuracy of each subject in the test set, and finally obtain the average decoding accuracy (%). The focus of this challenge is to evaluate the generalizability of EEG-AAD methods across unseen and sessions, employing more rigorous experimental paradigms and more challenging EEG data.</p>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <style>
       .task {
@@ -196,17 +220,35 @@
         margin: 0;
       }
 
-      .track-body {
-        padding: 20px;
+      .track-body-with-image {
+        padding: 20px 30px; /* 增加了左右内边距 */
       }
 
-      .track-body p {
+      .track-body-with-image p {
         font-size: 16px;
         color: #333;
-        line-height: 1.6;
+        line-height: 1.7; /* 略微增加行高，提升可读性 */
         margin: 0;
+        text-align: justify; /* 两端对齐，更美观 */
       }
 
+      .track-image {
+        border-radius: 8px; /* 给图片加一点圆角 */
+        background-color: #ffffff; /* 确保透明背景的图片显示正常 */
+        padding: 5px; /* 图片周围留一点白边 */
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* 给图片加一点轻微的阴影 */
+        margin-bottom: 15px; /* 在移动端，图片和下方文字的间距 */
+      }
+
+      /* 响应式调整：只在桌面端（md及以上）应用文字部分的左边距 */
+      @media (min-width: 768px) {
+        .track-body-with-image p {
+          padding-left: 20px; /* 在大屏幕上，让文字和图片之间有更多空间 */
+        }
+        .track-image {
+          margin-bottom: 0; /* 在桌面端，图片和文字同行，不需要底部边距 */
+        }
+      }
       @media (max-width: 768px) {
         .section-title h2 {
           font-size: 28px;
@@ -941,6 +983,7 @@
 
 
 </html>
+
 
 
 
