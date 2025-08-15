@@ -105,11 +105,12 @@
           -->
           <div class="col-lg-12" data-aos="fade-left">
             <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 px-4 text-center">
-                <p class="lh-lg" style="text-align: justify;">
-                    EEG-based <strong>auditory attention decoding (AAD)</strong> challenge aims to identify the direction of the attended speaker in multi-speaker environments from EEG signals. Despite the great progress, one critical limitation of current AAD studies lies in the lack of generalization capability to unseen subjects and sessions. Prior work predominantly restricted to single-subject within single-session, issues such as latent trial-dependent confound remain underexplored and there is a lack of systematic investigation into model generalization due to the scarcity of multi-modal stimulus data. 
+                <p class="lh-lg" style="text-align: justify;">                    
+                    EEG-based <strong>Auditory Attention Decoding (AAD)</strong> Challenge focuses on directional attention, aiming to identify the direction of the attended speaker in multi-speaker environments from electroencephalography (EEG) signals. Despite significant progress, a key limitation of current AAD studies is their poor generalization to unseen subjects and sessions. This is often caused by limited data, trial-dependent settings, and a lack of multi-modal stimulus data.
                 </p>
                 <p class="lh-lg" style="text-align: justify;">
-                    To address these issues and promote robust AAD research, this <strong>EEG-AAD challenge</strong> revolves around two key problems in AAD: cross-subject and cross-session tasks in multi-scenario settings. This competition will provide participants with the first multi-modal audio-visual auditory attention dataset simulating real-world scenes, containing approximately 4,400 minutes of EEG signals from 40 subjects across two sessions. Participants are challenged to push the boundaries of current methods and propose innovative solutions to address out-of-distribution generalization and data drift in EEG signals. We hope this challenge will advance the development of generalizable models for practical applications like hearing aids.
+                    
+                    To address these issues and promote robust AAD research, this <strong>EEG-AAD challenge</strong> revolves around two key problems in AAD: cross-subject and cross-session tasks in multi-scenario settings. The ultimate goal is to promote the generalizability of methods and their applications in real-world scenarios. This competition will provide participants with the first multi-modal auditory attention dataset that includes audio-visual stimuli designed to simulate real-world scenes. The dataset contains approximately 4,400 minutes of EEG signals collected from 40 different subjects during two experimental sessions conducted under both audio-visual and audio-only scenes. We hope this challenge will lead to new methodological innovations in AAD and the advancement of generalizable models for practical applications such as hearing aids.
                 </p>
                 <div style="background-color: #1f4385;" class="mx-5 rounded">
                     <!-- Optional banner space -->
@@ -124,7 +125,7 @@
     <section id="task" class="task">
       <div class="container">
         <div class="section-title" data-aos="fade-up">
-          <h2>Tracks Overview</h2>
+          <h2>Tasks Overview</h2>
           <p>Details about the Tracks to be completed</p>
         </div>
         <div class="row">
@@ -132,27 +133,18 @@
             <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 px-4">
               <div class="track-card">
                 <div class="track-header">
-                  <h3>Track 1: Cross-subject</h3>
+                  <h3>Task 1: Cross-subject</h3>
                 </div>
                 <div class="track-body">
-                  <p>This track challenges participants to build AAD models capable of decoding auditory attention categories from EEG signals across unseen subjects in audio-visual environments. Participants are provided with data from 30 subjects for training and validation, and data from 10 additional subjects for testing. The goal is to build a generalizable cross-subject decoding model, calculate the decoding accuracy of each subject in the test set, and finally obtain the average decoding accuracy(%).</p>
+                  <p>This task challenges participants to build AAD models capable of decoding auditory attention categories from EEG signals across unseen subjects in audio-visual environments. Participants are provided with data from 30 subjects for training and validation, and data from 10 additional subjects for testing. The goal is to build a generalizable cross-subject decoding model, calculate the decoding accuracy of each subject in the test set, and finally obtain the average decoding accuracy(%).</p>
                 </div>
               </div>
               <div class="track-card">
                 <div class="track-header">
-                  <h3>Track 2: Cross-session</h3>
+                  <h3>Task 2: Cross-session</h3>
                 </div>
                 <div class="track-body">
-                  <p>This track requires participants to
-bulid AAD models capable of decoding auditory attention
-categories from EEG signals of scenarios that subjects have
-never seen before. Data from 30 subjects in two scenarios are
-provided, where the audio-visual scenario data from the same
-subject is used for training, and the audio-only scenario data
-is used for validation. For the testing phase, data from an
-additional 10 subjects is provided, following the same process as validation: models trained on the audio-visual scenario are tested on data from the audio-only scenario. The
-goal of participants is to build a generalizable single-subject
-cross-session decoding model, calculate the decoding accuracy of each subject in the test set, and finally obtain the average decoding accuracy(%).</p>
+                  <p>This task requires participants to build AAD models capable of decoding auditory attention categories from EEG signals of scenes that subjects have never seen before. During the training phase, EEG data from 30 subjects are provided for both the audio-only and audio-visual conditions, where the audio-only data are used for training and the corresponding audio-visual data are used for validation. Additionally, the audio-only data for the 10 test subjects are provided in advance during the training phase. In the testing phase, participants can simply apply the models trained on this data to predict the corresponding audio-visual data from the same subjects. The goal of the participants is to build a generalizable single-subject cross-session decoding model, calculate the decoding accuracy of each subject in the test set, and finally obtain the average decoding accuracy (%). The focus of this challenge is to evaluate the generalizability of EEG-AAD methods across unseen and sessions, employing more rigorous experimental paradigms and more challenging EEG data.</p>
                 </div>
               </div>
             </div>
@@ -949,6 +941,7 @@ cross-session decoding model, calculate the decoding accuracy of each subject in
 
 
 </html>
+
 
 
 
